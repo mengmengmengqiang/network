@@ -4,4 +4,4 @@
 
 ## 2.桥接网络配置
 
->>This repository is free software disturibute under the GPL.
+>> This repository is free software disturibute under the GPL.
