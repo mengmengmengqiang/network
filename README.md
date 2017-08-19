@@ -8,7 +8,7 @@
 ### 2.桥接网络(*ubuntu下设置*)
 要使Linux工作在网桥模式,就必须要安装网桥工具**bridge-utils**,运行命令:
 
-    apt-get install -y bridge-utils
+    sudo apt-get install -y bridge-utils
 
 或者自行编译安装**bridge-utils**源码包。
 
