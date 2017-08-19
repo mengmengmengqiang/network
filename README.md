@@ -1,8 +1,6 @@
 * [网络配置](#1)
-
-* [1.静态IP](#1.1)
-
-* [2.桥接网络](#1.2)
+    * [1.静态IP](#1.1)
+    * [2.桥接网络](#1.2)
 
 <span id="1">网络配置</span>
 
@@ -59,7 +57,7 @@
     #redhat系发行版则可以通过/etc/resolv.conf文件来配置
     sudo cat "nameservers 114.114.114.114" >> /etc/resolv.conf
 
-### 2.桥接网络(*ubuntu16.04*)
+<span id="1.2">2.桥接网络(*ubuntu16.04*)</span>
 
 > [参考来源](http://fp-moon.iteye.com/blog/1468650)
 
