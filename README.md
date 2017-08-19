@@ -58,7 +58,7 @@
     sudo cat "nameservers 114.114.114.114" >> /etc/resolv.conf
 
 
-<p id="1.2">桥接网络(**ubuntu16.04**)</p>
+### <p id="1.2">桥接网络(**ubuntu16.04**)</p>
 
 > [参考来源](http://fp-moon.iteye.com/blog/1468650)
 
