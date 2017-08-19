@@ -10,7 +10,7 @@
 ### 2.桥接网络(*ubuntu16.04*)
 
 > [网桥配置的参考博客][1]
-> [http://fp-moon.iteye.com/blog/1468650]
+> [1][http://fp-moon.iteye.com/blog/1468650]
 
 要使Linux工作在网桥模式,就必须要安装网桥工具**bridge-utils**,运行命令:
 
