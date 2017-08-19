@@ -18,7 +18,7 @@
 还要安装**net-utils**包使命令**ifconfig**生效:
 
     sudo apt-get install -y net-utils
-    
+
 #### 配置网桥
 1.我们需要让Linux知道网桥，首先告诉它，我们想要一个虚拟的以太网桥接口。运行下面命令新建一个虚拟的以太网桥接口:
 
@@ -41,9 +41,8 @@
 
     sudo ifconfig br0 up
 
-6. 给网桥接口分配一个IP地址(**IP需要和eth0的IP在同一网段**)
+6.给网桥接口分配一个IP地址(**IP需要和eth0的IP在同一网段**)
 
     sudo ifconfig br0 x.x.x.x
-
 
 >> This repository is free software disturibute under the GPL.
