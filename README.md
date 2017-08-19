@@ -51,10 +51,13 @@
 
     sudo brctl show
 
-#### **网桥相关命令**:
->> 关闭网桥
+#### **网桥相关命令**：
+>> 从网桥删除eth0接口
 
     sudo brctl delif br0 eth0
+
+>> 关闭网桥
+
     ifconfig br0 down
 
 >> 删除网桥
