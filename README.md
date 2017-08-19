@@ -17,8 +17,9 @@
 
     sudo apt-get install -y net-utils
     
-### 配置网桥
-> 1.我们需要让Linux知道网桥，首先告诉它，我们想要一个虚拟的以太网桥接口。运行下面命令新建一个虚拟的以太网桥接口:
+#### 配置网桥
+1.我们需要让Linux知道网桥，首先告诉它，我们想要一个虚拟的以太网桥接口。运行下面命令新建一个虚拟的以太网桥接口:
     sudo brctl addbr br0
+
 
 >> This repository is free software disturibute under the GPL.
