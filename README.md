@@ -4,7 +4,7 @@
 
 <span id="1">网络配置</span>
 
-
+<h1 id="1.1">1.静态IP</h1>
 
 > 在**RedHat**系环境下
 
@@ -42,7 +42,7 @@
           gateway 192.168.9.108           #网关IP
           dns-nameservers 114.114.114.114 #DNS服务器地址
     EOF
-<span id="1.1">1.静态IP</span>
+
 > 重启网络
 
     #redhat系发行版
@@ -59,7 +59,7 @@
 
 
 
-<h1 id="1.2">2.桥接网络(ubuntu16.04)</h2>
+<h2 id="1.2">2.桥接网络(ubuntu16.04)</h2>
 
 > [参考来源](http://fp-moon.iteye.com/blog/1468650)
 
