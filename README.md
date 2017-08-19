@@ -6,7 +6,9 @@
 ### 1.静态IP
 > 在**RedHat**系环境下
 
-
+    #备份
+    sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0.bak
+    #写入配置
     sudo cat >/etc/sysconfig/network-scripts/ifcfg-eth0<<-'EOF'                                                                                                                                 
     TYPE=Ethernet           #网络类型为以太网
     BOOTPROTO=static        #静态网络
@@ -20,8 +22,10 @@
 
 > 在**debian**系环境下
 
-
-    sudo cat >>/etc/network/interfa<<-'EOF'
+    #备份
+    sudo cp /etc/network/interfaces /etc/network/interfaces.bak
+    #写入配置
+    sudo cat >>/etc/network/interfaces<<-'EOF'
     # interfaces(5) file used by ifup(8) and ifdown(8)
 
     source /etc/network/interfaces.d/*
@@ -35,6 +39,7 @@
           netmask 255.255.255.0           #子网掩码
           gateway 192.168.9.108           #网关IP
           dns-nameservers 114.114.114.114 #DNS服务器地址
+    EOF
 
 > 重启网络
 
