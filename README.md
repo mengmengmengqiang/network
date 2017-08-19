@@ -19,7 +19,7 @@
 
     sudo apt-get install -y net-utils
 
-#### 配置网桥
+#### **配置网桥**
 1.我们需要让Linux知道网桥，首先告诉它，我们想要一个虚拟的以太网桥接口。运行下面命令新建一个虚拟的以太网桥接口:
 
     sudo brctl addbr br0
@@ -49,7 +49,7 @@
 
     sudo brctl show
 
-#### 网桥相关命令:
+#### **网桥相关命令**:
 >> 关闭网桥
 
     sudo brctl delif br0 eth0
