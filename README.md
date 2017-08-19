@@ -5,7 +5,8 @@
 ## 配置
 ### 1.静态IP
 > 在**RedHat**系环境下
-编辑文件
+
+运行命令
 
     sudo cat >/etc/sysconfig/network-scripts/ifcfg-eth0<<-'EOF'                                                                                                                                 
     TYPE=Ethernet           #网络类型为以太网
@@ -19,6 +20,8 @@
     EOF
 
 > 在**debian**系环境下
+
+运行命令
 
     sudo cat >>/etc/network/interfa<<-'EOF'
     # interfaces(5) file used by ifup(8) and ifdown(8)
