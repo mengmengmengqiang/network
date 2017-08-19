@@ -57,9 +57,9 @@
     #redhat系发行版则可以通过/etc/resolv.conf文件来配置
     sudo cat "nameservers 114.114.114.114" >> /etc/resolv.conf
 
-<span id="1.2"></span>
 
-2.桥接网络(*ubuntu16.04*)
+
+<h1 id="1.2">2.桥接网络(*ubuntu16.04*)</h2>
 
 > [参考来源](http://fp-moon.iteye.com/blog/1468650)
 
