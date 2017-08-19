@@ -62,4 +62,3 @@
     sudo brctl delbr br0
 
 
->> This repository is free software disturibute under the GPL.
