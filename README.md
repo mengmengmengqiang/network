@@ -4,8 +4,36 @@
 
 ## 配置
 ### 1.静态IP
+> 在**RedHat**系环境下
+编辑文件
 
->> **待添加...**
+    sudo cat >/etc/sysconfig/network-scripts/ifcfg-eth0<<-'EOF'                                                                                                                                 
+    TYPE=Ethernet           #网络类型为以太网
+    BOOTPROTO=static        #静态网络
+    NAME=eth0               #网络名称eth0
+    DEVICE=eth0             #网络接口设备eth0 
+    IPADDR=172.16.0.5       #IP地址
+    NETMASK=255.255.255.0   #子网掩码
+    GATEWAY=172.16.0.1      #网关地址
+    ONBOOT=yes              #开机自动启动
+    EOF
+
+> 在**debian**系环境下
+
+    sudo cat >>/etc/network/interfa<<-'EOF'
+    # interfaces(5) file used by ifup(8) and ifdown(8)
+
+    source /etc/network/interfaces.d/*
+
+    auto lo
+    iface lo inet loopback
+
+    auto eth0                             #开机自动启动网卡
+    iface eth0 inet static                #静态IP
+          address 192.168.9.13            #所配置的IP地址
+          netmask 255.255.255.0           #子网掩码
+          gateway 192.168.9.108           #网关IP
+          dns-nameservers 114.114.114.114 #DNS服务器地址
 
 ### 2.桥接网络(*ubuntu16.04*)
 
