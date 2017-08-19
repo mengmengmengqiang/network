@@ -51,6 +51,14 @@
 
     sudo brctl show
 
+我们会看到配置的网桥信息如下
+
+    bridge name  bridge id             STP enabled      interfaces
+    br0          xxxx.xxxxxxxxxxxxxx   no               eth0
+
+8.配置网桥随开机启动
+>**这个挺烦的，以后再弄吧,可以把配置的命令写成脚本加入rc.local里面好了**
+
 #### **网桥相关命令**：
 > 从网桥删除eth0接口
 
