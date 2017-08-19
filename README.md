@@ -64,4 +64,6 @@
 
     sudo brctl delbr br0
 
+> 查看其他网桥命令
 
+    sudo brctl --help
