@@ -6,7 +6,6 @@
 ### 1.静态IP
 > 在**RedHat**系环境下
 
-运行命令
 
     sudo cat >/etc/sysconfig/network-scripts/ifcfg-eth0<<-'EOF'                                                                                                                                 
     TYPE=Ethernet           #网络类型为以太网
@@ -21,7 +20,6 @@
 
 > 在**debian**系环境下
 
-运行命令
 
     sudo cat >>/etc/network/interfa<<-'EOF'
     # interfaces(5) file used by ifup(8) and ifdown(8)
@@ -37,6 +35,20 @@
           netmask 255.255.255.0           #子网掩码
           gateway 192.168.9.108           #网关IP
           dns-nameservers 114.114.114.114 #DNS服务器地址
+
+> 重启网络
+
+    #redhat系发行版
+    sudo systemctl restart network.service
+    #debian发行版
+    sudo systemctl restart networking.service
+    #debian里面重启网络可能报错，不要管，先ping 114.114.114.114看看网络是不是联通
+
+> 配置DNS服务器地址
+
+    #debian系在上面已经配置了DNS地址,而/etc/resolv.conf文件在开机时会被修改，所以不要在这个文件里配置
+    #redhat系发行版则可以通过/etc/resolv.conf文件来配置
+    sudo cat "nameservers 114.114.114.114" >> /etc/resolv.conf
 
 ### 2.桥接网络(*ubuntu16.04*)
 
